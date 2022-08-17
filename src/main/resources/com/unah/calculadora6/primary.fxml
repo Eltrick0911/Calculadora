@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefHeight="310.0" prefWidth="290.0" spacing="20.0" style="-fx-background-color: AZURE;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.unah.calculadora6.PrimaryController">
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+   <children>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="305.0" prefWidth="270.0" style="-fx-background-color: AZURE;">
+         <children>
+            <GridPane hgap="5.0" layoutX="10.0" layoutY="67.0" prefHeight="169.0" prefWidth="238.0" vgap="5.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <BorderPane>
+                     <center>
+                        <Button fx:id="uno" mnemonicParsing="false" onAction="#switchToSecondary" prefHeight="54.0" prefWidth="74.0" style="-fx-background-color: LIGHTSTEELBLUE;" text="1" />
+                     </center>
+                  </BorderPane>
+                  <BorderPane GridPane.columnIndex="1">
+                     <center>
+                        <Button fx:id="dos" mnemonicParsing="false" onAction="#switchToSecondary" prefHeight="53.0" prefWidth="77.0" style="-fx-background-color: LIGHTSTEELBLUE;" text="2" />
+                     </center>
+                  </BorderPane>
+                  <BorderPane GridPane.columnIndex="2">
+                     <center>
+                        <Button fx:id="tres" mnemonicParsing="false" onAction="#switchToSecondary" prefHeight="64.0" prefWidth="74.0" style="-fx-background-color: LIGHTSTEELBLUE;" text="3" />
+                     </center>
+                  </BorderPane>
+                  <BorderPane GridPane.rowIndex="1">
+                     <center>
+                        <Button fx:id="cuatro" mnemonicParsing="false" onAction="#switchToSecondary" prefHeight="56.0" prefWidth="94.0" style="-fx-background-color: LIGHTSTEELBLUE;" text="4" />
+                     </center>
+                  </BorderPane>
+                  <BorderPane GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <center>
+                        <Button fx:id="cinco" mnemonicParsing="false" onAction="#switchToSecondary" prefHeight="46.0" prefWidth="67.0" style="-fx-background-color: LIGHTSTEELBLUE;" text="5" />
+                     </center>
+                  </BorderPane>
+                  <BorderPane GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <center>
+                        <Button fx:id="seis" mnemonicParsing="false" onAction="#switchToSecondary" prefHeight="47.0" prefWidth="74.0" style="-fx-background-color: LIGHTSTEELBLUE;" text="6" />
+                     </center>
+                  </BorderPane>
+                  <BorderPane GridPane.rowIndex="2">
+                     <center>
+                        <Button fx:id="siete" mnemonicParsing="false" onAction="#switchToSecondary" prefHeight="50.0" prefWidth="77.0" style="-fx-background-color: LIGHTSTEELBLUE;" text="7" />
+                     </center>
+                  </BorderPane>
+                  <BorderPane GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <center>
+                        <Button fx:id="ocho" mnemonicParsing="false" onAction="#switchToSecondary" prefHeight="64.0" prefWidth="90.0" style="-fx-background-color: LIGHTSTEELBLUE;" text="8" />
+                     </center>
+                  </BorderPane>
+                  <BorderPane GridPane.columnIndex="2" GridPane.rowIndex="2">
+                     <center>
+                        <Button fx:id="nueve" mnemonicParsing="false" onAction="#switchToSecondary" prefHeight="68.0" prefWidth="108.0" style="-fx-background-color: LIGHTSTEELBLUE;" text="9" />
+                     </center>
+                  </BorderPane>
+                  <BorderPane GridPane.rowIndex="3">
+                     <center>
+                        <Button fx:id="cero" mnemonicParsing="false" onAction="#switchToSecondary" prefHeight="68.0" prefWidth="110.0" style="-fx-background-color: LIGHTSTEELBLUE;" text="0" />
+                     </center>
+                  </BorderPane>
+                  <BorderPane GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <center>
+                        <Button fx:id="c" mnemonicParsing="false" onAction="#reset" prefHeight="55.0" prefWidth="75.0" style="-fx-background-color: LIGHTSTEELBLUE;" text="C" />
+                     </center>
+                  </BorderPane>
+                  <BorderPane GridPane.columnIndex="2" GridPane.rowIndex="3">
+                     <center>
+                        <Button fx:id="igual" mnemonicParsing="false" onAction="#switchToSecondary" prefHeight="61.0" prefWidth="70.0" style="-fx-background-color: LIGHTSTEELBLUE;" text="=" />
+                     </center>
+                  </BorderPane>
+                  <BorderPane GridPane.columnIndex="3">
+                     <center>
+                        <Button fx:id="entre" mnemonicParsing="false" onAction="#switchToSecondary" prefHeight="73.0" prefWidth="101.0" style="-fx-background-color: LIGHTSTEELBLUE;" text="/" />
+                     </center>
+                  </BorderPane>
+                  <BorderPane GridPane.columnIndex="3" GridPane.rowIndex="1">
+                     <center>
+                        <Button fx:id="por" mnemonicParsing="false" onAction="#switchToSecondary" prefHeight="56.0" prefWidth="97.0" style="-fx-background-color: LIGHTSTEELBLUE;" text="*" />
+                     </center>
+                  </BorderPane>
+                  <BorderPane GridPane.columnIndex="3" GridPane.rowIndex="2">
+                     <center>
+                        <Button fx:id="menos" mnemonicParsing="false" onAction="#switchToSecondary" prefHeight="62.0" prefWidth="85.0" style="-fx-background-color: LIGHTSTEELBLUE;" text="-" BorderPane.alignment="CENTER" />
+                     </center>
+                  </BorderPane>
+                  <BorderPane GridPane.columnIndex="3" GridPane.rowIndex="3">
+                     <center>
+                        <Button fx:id="mas" mnemonicParsing="false" onAction="#switchToSecondary" prefHeight="68.0" prefWidth="96.0" style="-fx-background-color: LIGHTSTEELBLUE;" text="+" />
+                     </center>
+                  </BorderPane>
+               </children>
+            </GridPane>
+            <TextField fx:id="texto" alignment="CENTER_RIGHT" editable="false" layoutX="14.0" layoutY="14.0" prefHeight="34.0" prefWidth="231.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
